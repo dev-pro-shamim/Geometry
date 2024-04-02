@@ -19,18 +19,45 @@
                     <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Tringle</h2>
-                      <p class="text-center">Area (A) = 0.5 * base * height</p></p>
+                      <p class="text-center text-3xl">Area (A) = 0.5 * b * h</p></p>
                      <div>
                       <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
                       <span class="mr-2 ml-2">cm</span>
-                      <input class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+                      <input class="w-24 text-2xl p-2 rounded-sm" type="text" id="triangle-height"  placeholder="h">
                       <span class="mr-2"></span>cm</span>
                      </div>
+
+                     <div>
+                      <p class="text-2xl" id="tringle-area" >Area : <span><span>cm <sup>2</sup></span></span></p>
+                     </div>
+
                       <div class="card-actions ">
                         <button onclick="calculateTringleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
+                  <!-- RecAngle -->
+
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rectangle.png" alt="Rectangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w*I</p>
+                      <div class="flex">
+                        <input type="text"  class="w-24 text-2xl p-2 rounded-sm" placeholder="w" >
+                        <!--Rectangle Width -->
+                              <span class="mr-2 ml-2"> cm</span>
+                        <input type="text"  class="w-24 text-2xl p-2 rounded-sm" placeholder="l">
+                        <!-- Rectangle Length -->
+                                <span class="mr-2 ml-2"> cm</span>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full" >Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+
 
                                   <!-- tringle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
@@ -71,6 +98,7 @@
     </main>
 
     <script src="./script/tringleCalculate.js"></script>
+    <script src="./script/rectangle-area.js"></script>
     
 </body>
 </html>
